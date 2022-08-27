@@ -1,6 +1,7 @@
 # stable/Containerfile
 # Code heavily taken from here: https://github.com/containers/buildah/blob/db8d5921a770e7536b34c56d062b47795b548d35/contrib/buildahimage/stable/Containerfile
 FROM registry.fedoraproject.org/fedora:36
+LABEL org.opencontainers.image.source="https://github.com/danmanners/buildah-image"
 
 RUN useradd build && \
     dnf -y update && \
